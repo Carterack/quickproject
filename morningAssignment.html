@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html id ="body">
+<head>
+<title>Morning Practice</title>
+</head>
+<body>
+	<form>
+	Input:<br>
+	<input type="text" id="one">
+	<br>
+	<input type="text" id="two">
+	<br>
+	<input type="text" id="three">
+	<button type="button" onclick= "concat()">submit</button>
+	<br></br>
+	<output type="text" id="four"></output>
+<script>
+
+function concat() {
+	var x;
+	var y;
+	var z;
+	
+	x=document.getElementById("one").value;
+	y=document.getElementById("two").value;
+	z=document.getElementById("three").value;
+	
+	var doIt = (x + y + z);
+	
+	document.getElementById("four").innerHTML = doIt;
+
+}
+</script>	
+</body>
+</html>
