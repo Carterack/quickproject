@@ -15,20 +15,24 @@
 	<br></br>
 	<output type="text" id="four"></output>
 <script>
-
 function concat() {
 	var x;
 	var y;
 	var z;
-	
-	x=document.getElementById("one").value;
-	y=document.getElementById("two").value;
-	z=document.getElementById("three").value;
-	
-	var doIt = (x + y + z);
-	
+	var doIt = "";
+	x=parseInt(document.getElementById("one").value);
+	y=parseInt(document.getElementById("two").value);
+	z=parseInt(document.getElementById("three").value);
+	console.log(x);
+	console.log(y);
+	console.log(z);
+	if(((x+y)>z) &&((x+z) >y) && ((z+y)>x)){
+			doIt ="valid";
+	}
+	else{
+		doIt ="not Valid";
+	}
 	document.getElementById("four").innerHTML = doIt;
-
 }
 </script>	
 </body>
